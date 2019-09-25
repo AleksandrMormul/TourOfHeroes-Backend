@@ -1,8 +1,9 @@
 const mongo = require('mongoose');
-const configDb = require('./connection');
 const Schema = mongo.Schema;
 
-mongo.Promise = global.Promise;
+//configDb.hz;
+
+/*mongo.Promise = global.Promise;
 
 mongo.connect(configDb.connection,{useUnifiedTopology: true, useNewUrlParser: true}).then(
   () => {
@@ -11,9 +12,7 @@ mongo.connect(configDb.connection,{useUnifiedTopology: true, useNewUrlParser: tr
   err => {
     console.log('Can not connect to the database' + err)
   }
-)
-
-
+);*/
 
 let Hero = new Schema({
   name: {
