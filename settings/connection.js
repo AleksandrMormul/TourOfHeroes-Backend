@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
-  connection: 'mongodb://127.0.0.1/TourOfHeroes'
+  connection: process.env.DB_HOST
 };
